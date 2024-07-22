@@ -20,3 +20,7 @@ print(id(a))
 print(id(b))
 print(id(c))
 #################################
+#create a one value Tuple Object of UTKARSH ?
+a=("UTKARSH",)
+print(a)
+print(id(a),type(a),len(a))
