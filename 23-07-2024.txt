@@ -86,3 +86,11 @@ print(path)
 path=r"C:\Users\OM\eclipse-workspace\01_22July_AmDocs\Day2"
 print(path)
 ###################################################################
+a="  thIs is NisHant HOuse.   "
+print(a,len(a))
+a=a.strip()#a.rstrip()#a.lstrip()
+print(a,len(a))
+b=a.replace('is', 'mm')#a.lower()#a.upper()#a.capitalize()
+print(b,len(b))
+
+#######################################################################
