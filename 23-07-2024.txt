@@ -186,3 +186,29 @@ print(a)
 m=math.factorial(5)
 print(m)
 ############################################################
+import math as m
+print(dir(m))
+
+# print(m.__doc__)
+# print(m.__class__)
+
+
+a=m.pi*5**2
+print(a)
+ 
+m=m.factorial(5)
+print(m)
+
+===========================================
+
+from math import *
+
+a=pi*3**2
+print(a)
+
+a=sin(pi/6)
+print(a)
+
+h=factorial(5)
+print(h)
+#####################################################
