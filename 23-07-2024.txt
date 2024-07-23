@@ -143,3 +143,13 @@ print(out)
 out=f"The NAme is {name} and Age is {age}"
 print(out)
 #############################################################################
+a="Nishant"
+
+# print(a)
+print("Winter is Coming !",end='-')
+print("Winter is Coming !",end='-')
+print("Winter is Coming !",end='-')
+print("Winter is Coming !")
+
+print("Nishant","Sharma",sep=',')
+###########################################################
