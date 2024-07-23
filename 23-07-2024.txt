@@ -79,3 +79,10 @@ Therefore, this 'Budget' is being keenly \\Uatched.'''
 
 print(obj2)
 ################################################################################
+
+path="C:\\Users\OM\eclipse-workspace\\01_22July_AmDocs\Day2"
+print(path)
+#Raw-String
+path=r"C:\Users\OM\eclipse-workspace\01_22July_AmDocs\Day2"
+print(path)
+###################################################################
