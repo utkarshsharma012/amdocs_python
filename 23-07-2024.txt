@@ -153,3 +153,13 @@ print("Winter is Coming !")
 
 print("Nishant","Sharma",sep=',')
 ###########################################################
+a=input("Enter The Value:-")# String
+print(a)
+print(type(a))
+a=float(a) #int(a)
+print(a)
+print(type(a))
+h=a*4
+print(h)
+print(type(h))
+#######################################################
