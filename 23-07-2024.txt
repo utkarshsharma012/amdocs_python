@@ -1,1 +1,10 @@
 Day-2 Text File 
+# a="NISHANT"
+# a="NISHANT Sharma"
+a=(10,10.8,"Test",(1,1.9,("hello",89)),89,"Test")
+print(a)
+#reverse the whole seq's object by fill the Value of X and Y ?
+
+b=a[-1:-(len(a)+1):-1]# -1,-2,-3,-4,-5,-6,-7
+
+print(b)
