@@ -35,3 +35,17 @@ for v in ["Manish",'Naresh','Suresh','Naresh','Dongli','Jhon','Trump']:
         print(v,"Please Join my Evening Party!")
 
 ##############################################################
+for v in ["Manish",'Naresh','Suresh','Naresh','Dongli','Jhon','Trump']:
+    if v!="Naresh":
+        pass
+    
+    print(v,"Please Join my Evening Party!")
+
+
+print("Done")
+
+"""
+Do nothing. Ignore the condition in which it occurred and 
+proceed to run the program as usual.
+"""
+############################################################
