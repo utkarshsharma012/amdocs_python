@@ -122,3 +122,13 @@ print(a is not b)#T
 print(id(a)==id(b))#F
 print(a==b)#T
 ###########################################################
+a=b=(1,1.2,"Hello",["Test",89],"Test",89.78)
+# b=(1,1.2,"Hello",["Test",89],"Test",89.78)
+
+print("Hello" not in a)#F
+print("Test" in b)#T
+print(a is not b)#F
+print(id(a)==id(b))#T
+print(a==b)#T
+
+######################################################################
