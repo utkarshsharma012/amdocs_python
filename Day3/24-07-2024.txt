@@ -77,3 +77,13 @@ print("Done")
 Skip the current iteration of a loop and move to the next iteration
 """
 ###################################################################
+# print value Nishant 1000 times ?
+# for i in range(5):
+#     print(i,"Nishant")
+# for i in range(10,22,2):
+#     print(i,"Nishant")
+
+for i in range(1,1000+1,1):
+    print(i,"Nishant")
+
+###############################################################
