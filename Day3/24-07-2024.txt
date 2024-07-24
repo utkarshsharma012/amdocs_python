@@ -64,3 +64,16 @@ Use the break statement to come out of the loop instantly.
 """
 
 #################################################
+for v in ["Manish",'Naresh','Suresh','Naresh','Dongli','Jhon','Trump']:
+    if v=="Naresh":
+        continue
+    
+    print(v,"Please Join my Evening Party!")
+
+
+print("Done")
+
+"""
+Skip the current iteration of a loop and move to the next iteration
+"""
+###################################################################
