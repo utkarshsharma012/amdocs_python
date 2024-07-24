@@ -1,0 +1,10 @@
+# a=b=(1,1.2,"Hello",["Test",89],"Test",89.78)
+# # b=(1,1.2,"Hello",["Test",89],"Test",89.78)
+a=(1,1.2,"Hello",(["Utkarsh"],89),90,89.78)
+b=(1,1.2,"Hello",(["Utkarsh"],89),90,89.78)
+
+print("Hello" not in a)
+print("Test" in b)
+print(a is not b)
+print(id(a),id(b))
+print(a==b)
