@@ -7,3 +7,19 @@ lname=input("Enter the lname:-")
   else:	print("Name not matched")
 
 print("DOne")
+
+################################################################
+
+from random import randint 
+value_1=randint(0,100)
+
+if value_1>60 and value_1<10 :
+    if value_1>43:
+        print(f"The Value {value_1} is Large!")
+    elif 35<value_1<=43:
+        print(f"The Value {value_1} is Medium!")
+    else:
+        print(f"The Value {value_1} is small!")
+        
+else:
+    print(f"The Value {value_1} is Out of Range!")
