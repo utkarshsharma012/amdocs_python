@@ -288,3 +288,14 @@ v1=details(age=56,fname='Raj',lname='Meena')
 print(v1
 
 ####################################################
+def details(fname,lname,age):
+    name=fname+' '+lname 
+    return name,age
+
+#positional argument+keyword argument
+v=details('Manish',age=89,lname='Sharma')
+print(v)
+
+v1=details('Raj','Meena',age=56)
+print(v1)
+##############################################
