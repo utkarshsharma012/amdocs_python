@@ -230,3 +230,17 @@ fh.close()
 
 # fh.readline() #Error 
 #####################################################
+fh=open('lines.txt','r')
+out=open('out.txt','w')
+
+for line in fh:
+    if line.strip().endswith('.mp3')  :
+        print(line.strip(),file=out)
+    
+print("Done")
+fh.close()
+out.close()
+# hero
+#.mp3
+
+#############################################
