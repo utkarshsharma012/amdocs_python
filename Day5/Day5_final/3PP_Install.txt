@@ -1,0 +1,79 @@
+install 3PP in python
+case: 1 
+python installed but not recog. over the cmd
+step 1:
+find pythonXX.x\Scripts
+step 2 
+cd at cmd
+1.list of 3pp
+pip freeze
+
+2.to installpkg
+pip install pkgname
+pip install pkgname==x.x.x
+
+matplotlib
+seaborn
+pandas
+regex
+psycopg2
+mysql-connector
+numpy
+pyinstaller
+scipy
+django
+
+3.To uninstall pkg
+
+pip uninstall pkgname
+
+4.To upgrade pkg
+pip install --upgrade pkgname
+
+5. install list of pkges from file
+
+pip install --upgrade -r  fullpathwithfilename
+
+
+
+
+
+
+case no 2
+same python version recog. over the cmd
+open cmd 
+1.list of 3pp
+python -m pip freeze
+
+2.to installpkg
+python -m pip install pkgname
+python -m pip install pkgname==x.x.x
+
+matplotlib
+seaborn
+pandas
+regex
+psycopg2
+mysql-connector
+numpy
+pyinstaller
+scipy
+django==1.10
+
+
+3.To uninstall pkg
+
+python -m pip uninstall pkgname
+
+4.To upgrade pkg
+python -m pip install --upgrade pkgname
+
+5. install list of pkges from file
+
+python -m pip install --upgrade -r  fullpathwithfilename
+
+or
+cd to your list of pkg file
+the
+
+python -m pip install --upgrade -r  filename
