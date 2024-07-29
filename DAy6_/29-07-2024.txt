@@ -35,3 +35,8 @@ print(f)
 g=''.join(f)
 print(g)
 ########################################
+str1="I122N33D343I33@333     D454E34r3L444H67734I"
+print(str1)
+f=''.join(filter(lambda x : not x.isdigit(),str1))
+print(f)
+#########################################
