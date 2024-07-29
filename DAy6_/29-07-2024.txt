@@ -28,3 +28,10 @@ print(f)
 h=list(f)#tuple(f)
 print(h)
 ###################################
+str1="I122N33D343I33@333     D454E34r3L444H67734I"
+f=filter(lambda x : not x.isdigit(),str1)
+f=list(f)
+print(f)
+g=''.join(f)
+print(g)
+########################################
