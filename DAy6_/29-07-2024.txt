@@ -67,3 +67,9 @@ print(a)
 a=[n if n%2!=0 else None for n in range(1,20) ]
 print(a)
 ###########################################################
+str1="I122N33D343I33@333     D454E34r3L444H67734I"
+print(str1)
+# f=''.join(filter(lambda x : not x.isdigit(),str1))
+f=''.join(filter(lambda x : x not in [str(n) for n in range(10)],str1))
+print(f)
+#############################################################
