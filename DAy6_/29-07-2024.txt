@@ -179,3 +179,13 @@ if conn!=None:
 else:
     print("Conn. Failed")
 ########################################################################
+#insert The Given Data Into Table 1
+    rows=[(18911,None,14,None,'Manisha'),(111,34556.799,54,"florida us",'Dongli'),
+             (121,34.908,38,"near lake,Boston",'Mr.Wu'),(131,None,14,None,'Manisha'),
+             (141,45.798,98,None,'Rajesh'),(151,None,94,None,'Jhon')]
+############################################################################
+#insert The Given Data Into Table 2
+    rows=[(None,14,None,'Manisha'),(34556.799,54,"florida us",'Dongli'),
+             (34.908,38,"near lake,Boston",'Mr.Wu'),(None,14,None,'Manisha'),
+             (45.798,98,None,'Rajesh'),(None,94,None,'Jhon')]
+###########################################################################
