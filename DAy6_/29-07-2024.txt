@@ -40,3 +40,15 @@ print(str1)
 f=''.join(filter(lambda x : not x.isdigit(),str1))
 print(f)
 #########################################
+# create a list of 1000 random integer numbers ?
+from random import randint
+list_r=[]
+for i in range(1000):
+    list_r.append(randint(10,67))
+    
+print(list_r)
+#list comprehension in python    
+# [value for loop_var in iterObject]  
+list_r=[randint(10,67) for n in range(1000)] 
+print(list_r)
+ ######################################################
