@@ -189,3 +189,20 @@ else:
              (34.908,38,"near lake,Boston",'Mr.Wu'),(None,14,None,'Manisha'),
              (45.798,98,None,'Rajesh'),(None,94,None,'Jhon')]
 ###########################################################################
+from db_connect import connect 
+conn,cur=connect()
+if conn!=None:
+    #Sql_Inj
+    #python Data Type List of Tuples
+    rows=[(18911,None,14,None,'Manisha'),(1111,34556.799,54,"florida us",'Dongli'),
+             (1211,34.908,38,"near lake,Boston",'Mr.Wu'),(1311,None,14,None,'Manisha'),
+             (1411,45.798,98,None,'Rajesh'),(1511,None,94,None,'Jhon')]
+    
+    sql="insert into amd01 (id,salary,age,address,name) values (%s,%s,%s,%s,%s)"
+    cur.executemany(sql,rows)
+    conn.commit()
+    conn.close()
+else:
+    print("Conn. Failed")
+
+################################################################################
