@@ -77,3 +77,15 @@ sq=[1,2,3,4,5]
 g=list(map(lambda x : x+3,sq))
 print(g)
 #############################################################
+seq=[n*34.6 for n in range(1,17)]
+print(seq)
+
+g=0
+for i in seq:
+    g=g+i 
+    
+print(g)
+from functools import reduce 
+g=reduce(lambda x,y: x+y, seq)
+print(g)
+###########################################################
