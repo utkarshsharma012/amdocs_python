@@ -141,3 +141,13 @@ if conn!=None:
 else:
     print("Conn. Failed")
 ##################################################################
+from db_connect import connect 
+conn,cur=connect()
+if conn!=None:
+    sql="insert into amd01 (id,name,age,address,salary) values (4,'Raj',45,null,67.89)"
+    cur.execute(sql)
+    conn.commit()
+    conn.close()
+else:
+    print("Conn. Failed")
+###############################################################
