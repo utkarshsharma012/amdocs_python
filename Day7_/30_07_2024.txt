@@ -337,3 +337,34 @@ class Child(Mother):
 c=Child('Maa',"Paa","Mee")
 c.skills()
 ##############################################################
+# Error ? Solve The Error ? 
+#Multiple Inheritance
+# Method overriding
+#Method overloading
+class Father:
+    def __init__(self,fname):
+        self.fname=fname
+    def skills(self):
+        print("I enjoy gardening",self.fname)
+
+class Mother:
+    def __init__(self,mname):
+        self.mname=mname
+    def skills(self):
+        print("I love cooking",self.mname)
+    
+
+class Child(Mother,Father):
+    def __init__(self,mname,fname,name):
+#         super().__init__(mname)
+#         super().__init__(fname)
+        self.name=name
+    def  skills(self):
+        Mother.skills(self)
+        Father.skills(self)
+        
+        print("I enjoy sports",self.name)
+ 
+c=Child('Maa',"Paa","Mee")
+c.skills()
+#################################################################
