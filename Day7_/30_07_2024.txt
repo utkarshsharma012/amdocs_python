@@ -212,3 +212,15 @@ c.general_usage()
 print(c.var)#56
 print(Vehicle.var)#90
 #########################################################
+class Father:
+    def gardening(self):
+        print("I enjoy gardening")
+
+class Mother:
+    def cooking(self):
+        print("I love cooking")
+
+class Child:
+    def  skills(self):
+        print("I enjoy sports")
+#############################################################
