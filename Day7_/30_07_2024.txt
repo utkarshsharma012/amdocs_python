@@ -424,4 +424,7 @@ requests
 bs4
 flask
 flask-wtf
+xlsxwriter
+xlrd
+openpyxl
 ####################################################
