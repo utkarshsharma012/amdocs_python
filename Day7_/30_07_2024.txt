@@ -413,4 +413,15 @@ class Child(Mother,Father):
  
 c=Child('Maa',"Paa","Mee")
 c.skills()
-
+######################
+jupyter
+pandas
+matplotlib
+numpy
+virtualenv
+pyinstaller
+requests
+bs4
+flask
+flask-wtf
+####################################################
