@@ -1,0 +1,46 @@
+import psycopg2
+import pandas as pd
+import sys
+# Connection parameters, yours will be different
+param_dic = {
+    "host"      : "localhost",
+    "database"  : "learning",
+    "user"      : "nishant",
+    "password"  : "1234"
+}
+def connect(params_dic):
+    """ Connect to the PostgreSQL database server """
+    conn = None
+    try:
+        # connect to the PostgreSQL server
+        print('Connecting to the PostgreSQL database...')
+        conn = psycopg2.connect(**params_dic)
+    except (Exception, psycopg2.DatabaseError) as error:
+        print(error)
+        sys.exit(1) 
+    print("Connection successful")
+    return conn
+
+
+def postgresql_to_dataframe(conn, select_query):
+    """
+    Tranform a SELECT query into a pandas dataframe
+    """
+    cursor = conn.cursor()
+    try:
+        cursor.execute(select_query)
+    except (Exception, psycopg2.DatabaseError) as error:
+        print("Error: %s" % error)
+        cursor.close()
+        return 1
+
+    # Naturally we get a list of tupples
+    tupples = cursor.fetchall()
+    column_names=[desc[0] for desc in cursor.description]
+    conn.close()
+
+    # We just need to turn it into a pandas dataframe
+    df = pd.DataFrame(tupples, columns=column_names)
+    return df
+
+########################################################
