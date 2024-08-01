@@ -20,3 +20,20 @@ def invalid_url(e):
 if __name__ == '__main__':
     app.run(debug=True)
 ########################################################
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    My First HTML Page
+    </title>
+<!--
+html comment
+-->
+  </head>
+  <body>
+    <h1>Hi This is Home Page </h1>
+  </body>
+
+</html>
+
+###########################################################
