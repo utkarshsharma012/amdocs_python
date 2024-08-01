@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% if title %}
+  <title>{{title}} Page</title>
+  {%else%}
+  <title>No Title</title>
+  {%endif%}
+<!--
+html comment
+-->
+  </head>
+  <body>
+    <h1>Hi This is Home Page </h1>
+  {{posts}}
+
+{% for post in posts %}
+      <h1>{{post['title']}}</h1>
+      <p>By {{post.author}} on {{post["date_posted"]}}</p>
+      <p><em>{{post.content}}</em></p>
+
+{%endfor%}
+
+
+  </body>
+
+</html>
