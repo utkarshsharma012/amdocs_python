@@ -50,3 +50,23 @@ posts = [{
 ]
 
 #############################################
+<!DOCTYPE html>
+<html>
+<head>
+  {% if title %}
+  <title>{{title}} Page</title>
+  {%else%}
+  <title>No Title</title>
+  {%endif%}
+<!--
+html comment
+-->
+  </head>
+  <body>
+    <h1>This is Nav Bar </h1>
+{%block content%}
+{%endblock%}
+  </body>
+
+</html>
+#######################################################
