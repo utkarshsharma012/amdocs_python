@@ -50,6 +50,8 @@ posts = [{
 ]
 
 #############################################
+layout.html
+#########################
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,6 +72,8 @@ html comment
 
 </html>
 #######################################################
+home.html
+###########################
 {%extends "layout.html"%}
 {% block content %}
 <h1>Hi This is Home Page </h1>
