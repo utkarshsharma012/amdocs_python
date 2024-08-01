@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% if title %}
+  <title>{{title}} Page</title>
+  {%else%}
+  <title>No Title</title>
+  {%endif%}
+<!--
+html comment
+-->
+  </head>
+  <body>
+    <h1>Hi This is Home Page </h1>
+    <h1>{{fruits}}</h1>
+    <ol>
+      {% for fruit in fruits %}
+      <h1><li>{{fruit}}</li></h1>
+
+      {%endfor%}
+    </ol>
+
+  </body>
+
+</html>
